@@ -2,32 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.custom-img{
+    background-image: url(../../public/Pictures/group22.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment:fixed;
+    background-size: 1500px 500px;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.dustom-img{
+    background-image: url(../../public/Pictures/group.jpg);
+    background-repeat: no-repeat;
+    background-position:left;
+    background-attachment:scroll;
+    background-size: 800px 750px;
+    
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.lustom-img{
+    background-image: url(../../public/Pictures/8.jpg);
+    background-repeat: no-repeat;
+    background-position:right;
+    background-attachment:scroll;
+    background-size:800px 750px; 
 }
